@@ -56,6 +56,21 @@ def login_user(username, password):
         print("Invalid username or password")
         return None
 
+def forgot_password():
+    db = connect_db()
+    cursor = db.cursor()
+    print("\n=== Forgot Password ===")
+    username = input("Enter username: ")
+    date_of_birth = input("Enter date of birth (YYYY-MM-DD): ")
+    sql = "SELECT password FROM users WHERE username = %s AND date_of_birth = %s"
+    cursor.execute(sql, (username,date_of_birth))
+    result = cursor.fetchone()
+    if result:
+        print(f"Your password: {result[0]}")
+    else:
+        print("No matching user found. Please check your user and date of birth")
+    db.close()
+
 def after_login_menu(user_id):
     while True:
         print("\n=== Menu Digital Diary's ===")
@@ -92,19 +107,15 @@ def diary_menu(user_id):
         if choice == "1":
             activities = input("Today's activities: ")
             add_diary_entry(user_id, activities)
-
         elif choice == "2":
             view_all_entries(user_id)
-
         elif choice == "3":
             entry_id = input("Entry ID to update: ")
             new_activities = input("New activities: ")
             update_diary_entry(user_id, entry_id, new_activities)
-
         elif choice == "4":
             entry_id = input("Entry ID to delete: ")
             delete_diary_entry(user_id, entry_id)
-
         elif choice == "5":
             break
         else:
@@ -115,7 +126,9 @@ def mood_menu(user_id):
         print("\n=== Mood Menu ===")
         print("1. Add mood")
         print("2. View all mood entries")
-        print("3. Back to main menu")
+        print("3. Update mood entry")
+        print("4. Delete mood entry")
+        print("5. Back to main menu")
         choice = input("Choice: ")
         if choice == "1":
             mood = input("Mood: ")
@@ -123,6 +136,13 @@ def mood_menu(user_id):
         elif choice == "2":
             view_all_mood(user_id)
         elif choice == "3":
+            entry_id = input("Mood ID to update: ")
+            new_mood = input("New mood: ")
+            update_mood(user_id, entry_id, new_mood)
+        elif choice == "4":
+            entry_id = input("Mood ID to delete: ")
+            delete_diary_entry(user_id, entry_id)
+        elif choice == "5":
             break
         else:
             print("Invalid choice")
@@ -132,7 +152,9 @@ def achievement_menu(user_id):
         print("\n=== Menu Achievement ===")
         print("1. Add achievement")
         print("2. View all achievements")
-        print("3. Back to main menu")
+        print("3. Update achievement entry")
+        print("4. Delete achievement entry")
+        print("5. Back to main menu")
         choice = input("Choice: ")
         if choice == "1":
             title = input("Title Achievement: ")
@@ -141,6 +163,13 @@ def achievement_menu(user_id):
         elif choice == "2":
             view_achievement(user_id, title, description)
         elif choice == "3":
+            entry_id = input("Achievement ID to update: ")
+            new_achievement = input("New achievement: ")
+            update_achievement(user_id, entry_id, new_achievement)
+        elif choice == "4":
+            entry_id = input("Achievement ID to delete: ")
+            delete_achievement(user_id, entry_id)
+        elif choice == "5":
             break
         else:
             print("Invalid choice")
@@ -264,7 +293,8 @@ def main():
         print("\n=== Welcome to MOODIE - your mood & digital diary! ===")
         print("1. Register User")
         print("2. Login")
-        print("3. Exit")
+        print("3. Forgot Password")
+        print("4. Exit")
 
         choice = input("Enter your choice: ")
         if choice == "1":
@@ -283,6 +313,9 @@ def main():
                 after_login_menu(user_id)
 
         elif choice == "3":
+            forgot_password()
+
+        elif choice == "4":
             print("Goodbye!")
             break
 
