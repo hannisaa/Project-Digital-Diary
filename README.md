@@ -108,14 +108,6 @@ Proyek ini mengimplementasikan konsep **Object-Oriented Programming (OOP)** sert
 
 ---
 
-## Entity Relationship Diagram (ERD)
-
-```md
-![ERD](ERD.PNG)
-```
-
----
-
 ## Project Structure
 
 ```text
@@ -147,7 +139,7 @@ digital-diary-python-mysql/
 
 ---
 
-## Installation
+## Instalasi
 
 ### Prerequisites
 
@@ -184,28 +176,6 @@ melalui phpMyAdmin atau MySQL Workbench.
 
 ```bash
 python main.py
-```
-
----
-
-## 📸 Screenshots
-
-### Login Page
-
-```md
-![Login](screenshots/Login.png)
-```
-
-### Main Menu
-
-```md
-![Main Menu](screenshots/MainMenu.png)
-```
-
-### Diary Menu
-
-```md
-![Diary Menu](screenshots/DiaryMenu.png)
 ```
 
 ---
