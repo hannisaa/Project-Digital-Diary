@@ -111,7 +111,7 @@ Proyek ini mengimplementasikan konsep **Object-Oriented Programming (OOP)** sert
 ## Entity Relationship Diagram (ERD)
 
 ```md
-![ERD](docs/ERD.png)
+![ERD](https://github.com/hannisaa/Project-Digital-Diary/blob/1fe3924a5b1a743028fad76daa9c64367cf3613b/ERD.PNG)
 ```
 
 ---
