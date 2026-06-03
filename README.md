@@ -1,66 +1,61 @@
-# 📔 Digital Diary Management System
+# Sistem Digital Diary
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![OOP](https://img.shields.io/badge/OOP-Object%20Oriented%20Programming-success?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Selesai-brightgreen?style=for-the-badge)
 
-A command-line Digital Diary application developed using **Python** and **MySQL** that allows users to record daily activities, moods, and achievements through a secure authentication system.
+##  Deskripsi Proyek
 
----
+Digital Diary merupakan aplikasi berbasis **Python dan MySQL** yang dirancang untuk membantu pengguna mencatat aktivitas harian, suasana hati (mood), dan pencapaian pribadi secara digital.
 
-## 📌 Overview
-
-Digital Diary is a personal journal management system that enables users to:
-
-- Register and manage accounts
-- Login securely
-- Recover forgotten passwords
-- Record daily diary entries
-- Track moods
-- Store achievements
-- Update and delete records
-- Maintain data persistence using MySQL
-
-The project demonstrates the implementation of **Object-Oriented Programming (OOP)** concepts and database integration in a real-world CRUD application.
+Proyek ini mengimplementasikan konsep **Object-Oriented Programming (OOP)** serta integrasi database MySQL untuk menyimpan dan mengelola data pengguna secara terstruktur.
 
 ---
 
-## 🚀 Features
+##  Tujuan Proyek
 
-### User Management
-
-- User Registration
-- User Login
-- Forgot Password Recovery
-- Logout Functionality
-
-### Diary Management
-
-- Add Diary Entry
-- View Diary Entries
-- Update Diary Entry
-- Delete Diary Entry
-
-### Mood Tracking
-
-- Add Mood
-- View Mood History
-- Update Mood
-- Delete Mood
-
-### Achievement Tracking
-
-- Add Achievement
-- View Achievements
-- Update Achievement
-- Delete Achievement
+- Menerapkan konsep OOP dalam pengembangan aplikasi.
+- Mengintegrasikan Python dengan MySQL.
+- Mengimplementasikan operasi CRUD (Create, Read, Update, Delete).
+- Membangun sistem autentikasi pengguna.
+- Mendesain database relasional untuk kebutuhan aplikasi nyata.
 
 ---
 
-## 🏗 System Architecture
+## 🚀 Fitur Utama
 
-The application is built using:
+###  Manajemen Pengguna
+
+- Registrasi pengguna
+- Login pengguna
+- Lupa password
+- Logout
+
+###  Manajemen Diary
+
+- Menambah catatan harian
+- Melihat seluruh catatan
+- Mengubah catatan
+- Menghapus catatan
+
+###  Manajemen Mood
+
+- Menambah mood harian
+- Melihat riwayat mood
+- Mengubah mood
+- Menghapus mood
+
+###  Manajemen Achievement
+
+- Menambah pencapaian
+- Melihat daftar pencapaian
+- Mengubah pencapaian
+- Menghapus pencapaian
+
+---
+
+## Tools yang Digunakan
 
 - Python
 - MySQL
@@ -69,9 +64,9 @@ The application is built using:
 
 ---
 
-## 🗄 Database Design
+## 🗄 Struktur Database
 
-### Tables
+### Tabel
 
 #### Users
 
@@ -113,9 +108,7 @@ The application is built using:
 
 ---
 
-## 🔗 Entity Relationship Diagram
-
-Add your ERD image here:
+## Entity Relationship Diagram (ERD)
 
 ```md
 ![ERD](docs/ERD.png)
@@ -123,7 +116,7 @@ Add your ERD image here:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 digital-diary-python-mysql/
@@ -160,34 +153,34 @@ digital-diary-python-mysql/
 
 - Python 3.10+
 - MySQL Server
-- XAMPP (optional)
+- XAMPP 
 - MySQL Connector for Python
 
-Install dependency:
+## Cara Menjalankan Program
+
+### 1. Install Dependensi
 
 ```bash
 pip install mysql-connector-python
 ```
 
----
-
-### Database Setup
-
-Create a database:
+### 2. Buat Database
 
 ```sql
 CREATE DATABASE db_digital_diary;
 ```
 
-Import:
+### 3. Import Database
+
+Import file:
 
 ```text
 database/db_digital_diary.sql
 ```
 
----
+melalui phpMyAdmin atau MySQL Workbench.
 
-### Run the Application
+### 4. Jalankan Program
 
 ```bash
 python main.py
@@ -217,34 +210,27 @@ python main.py
 
 ---
 
-## 🎯 Learning Outcomes
-
-This project demonstrates:
+## Konsep yang Diimplementasikan
 
 - Object-Oriented Programming (OOP)
-- Python Programming
-- MySQL Database Integration
 - CRUD Operations
+- Database Relasional
 - User Authentication
-- Relational Database Design
+- MySQL Integration
 - Flowchart Design
-- ERD Modeling
+- Entity Relationship Diagram (ERD)
 
 ---
 
-## 👨‍💻 Developers
+## Developers
 
 - Hilwa Annisa
 - Rizky Nur Aziz
 
 ---
 
-## 🎓 Academic Project
+## Academic Project
 
-Developed as part of the Python and SQL Programming course at CEP-CCIT, Faculty of Engineering, Universitas Indonesia.
+Proyek ini dikembangkan sebagai tugas mata kuliah Python dan SQL Programming di CEP-CCIT Fakultas Teknik Universitas Indonesia.
 
 ---
-
-## 📄 License
-
-This project is intended for educational and portfolio purposes.
