@@ -108,37 +108,6 @@ Proyek ini mengimplementasikan konsep **Object-Oriented Programming (OOP)** sert
 
 ---
 
-## Project Structure
-
-```text
-digital-diary-python-mysql/
-│
-├── README.md
-│
-├── src/
-│   ├── main.py
-│   ├── user.py
-│   ├── diary.py
-│   ├── mood.py
-│   └── achievement.py
-│
-├── database/
-│   └── db_digital_diary.sql
-│
-├── docs/
-│   ├── ERD.png
-│   ├── Flowchart.png
-│   └── Project_Report.pdf
-│
-└── screenshots/
-    ├── Login.png
-    ├── Register.png
-    ├── DiaryMenu.png
-    └── AchievementMenu.png
-```
-
----
-
 ## Instalasi
 
 ### Prerequisites
