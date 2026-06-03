@@ -110,8 +110,6 @@ Proyek ini mengimplementasikan konsep **Object-Oriented Programming (OOP)** sert
 
 ## Instalasi
 
-### Prerequisites
-
 - Python 3.10+
 - MySQL Server
 - XAMPP 
@@ -144,7 +142,7 @@ melalui phpMyAdmin atau MySQL Workbench.
 ### 4. Jalankan Program
 
 ```bash
-python main.py
+Digital Diary.py
 ```
 
 ---
