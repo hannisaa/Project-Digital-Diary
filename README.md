@@ -23,7 +23,7 @@ Proyek ini mengimplementasikan konsep **Object-Oriented Programming (OOP)** sert
 
 ---
 
-## 🚀 Fitur Utama
+##  Fitur Utama
 
 ###  Manajemen Pengguna
 
@@ -64,7 +64,7 @@ Proyek ini mengimplementasikan konsep **Object-Oriented Programming (OOP)** sert
 
 ---
 
-## 🗄 Struktur Database
+##  Struktur Database
 
 ### Tabel
 
@@ -147,7 +147,7 @@ digital-diary-python-mysql/
 
 ---
 
-## ⚙ Installation
+## Installation
 
 ### Prerequisites
 
